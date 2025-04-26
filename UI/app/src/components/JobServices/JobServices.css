@@ -1,0 +1,390 @@
+.job-services {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar {
+  background-color: #333;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.login-icon a {
+  color: white;
+  text-decoration: none;
+}
+
+.upper-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10%;
+  width: 70%;
+  height: 20%;
+  margin-bottom: 10px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.search-container,
+.scrape-container {
+  flex: 1;
+  width: 20%;
+  padding: 5%;
+  background-color: #7b7b7b;
+  border-radius: 20px;
+  color: white;
+  transition: transform 0.2s, background-color 0.2s;
+  cursor: pointer;
+}
+.search-container {
+  margin-right: 10px;
+}
+
+.search-container:hover,
+.scrape-container:hover {
+  transform: scale(1.02);
+  background-color: #b0b4b8;
+  color: #3c3939;
+  z-index: 1;
+}
+.section-divider {
+  border: 0;
+  height: 2px;
+  background-color: white;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.italic-description {
+  font-style: italic;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+  display: flex;
+  width: 80%;
+  height: 80%;
+  max-width: 960px;
+  background: white;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.modal-content {
+  display: flex;
+  width: 100%;
+}
+
+.modal-left {
+  flex: 1;
+  padding: 20px;
+  border-right: 2px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.modal-right {
+  flex: 2;
+  padding: 20px;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+}
+
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: -10px;
+  border: none;
+  background: none;
+  color: #aaa;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.close-modal:hover {
+  color: #000000;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.button-group {
+  margin-bottom: 10px;
+}
+
+button {
+  margin-right: 10px;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+button.active {
+  background-color: #007bff;
+  color: white;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+.job-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: first baseline;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.job-details {
+  max-width: 80%;
+}
+
+.job-button {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-left: auto;
+}
+
+.job-button:hover {
+  background-color: #0056b3;
+}
+
+.job-list {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-icon button {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.login-icon button:hover {
+  background-color: #0056b3;
+}
+
+.job-button,
+.login-icon button {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.job-button:hover,
+.login-icon button:hover {
+  background-color: #0056b3;
+}
+
+.navbar-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.user-info-button {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 10px; /* Spacing between the buttons */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.user-info-button:hover {
+  background-color: #f0f0f0;
+  color: #007bff;
+}
+
+.user-info-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 15;
+}
+
+.user-info-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  max-width: 800px;
+  background: white;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.user-info-modal-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+.user-info {
+  flex-grow: 1;
+}
+
+.delete-user-button {
+  background-color: #dc3545;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete-user-button:hover {
+  background-color: #c82333;
+}
+
+.pagination-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.pagination-buttons button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination-buttons button:hover {
+  background-color: #0056b3;
+}
+
+.close-user-info-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background: none;
+  color: #aaa;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.close-user-info-modal:hover {
+  color: #000000;
+}
+
+.user-info-button {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.user-info-button:hover {
+  background-color: #f0f0f0;
+  color: #007bff;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

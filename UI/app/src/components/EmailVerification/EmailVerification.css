@@ -1,0 +1,84 @@
+.email-verification-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom, #007bff, #52c1f8);
+}
+
+.verification-container {
+  background-color: white;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+.verification-container h2 {
+  margin-bottom: 10px;
+  color: #060606;
+}
+
+.verification-container p {
+  margin-bottom: 20px;
+}
+
+.verification-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.verification-form input {
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.verification-form button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.verification-form button:hover {
+  background-color: #0056b3;
+}
+.verification-form input {
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  border: 2px solid #007bff;
+  border-radius: 8px;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 123, 255, 0.2);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+
+.verification-form input:focus {
+  border-color: #0056b3;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+
+.verification-form input::placeholder {
+  font-style: italic;
+  color: #999;
+}
+
+.resend-text {
+  margin-top: 15px;
+  color: #666;
+}
+
+.resend-link {
+  color: #007bff;
+  cursor: pointer;
+  text-decoration: underline;
+}
